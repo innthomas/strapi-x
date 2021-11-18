@@ -7,10 +7,10 @@ const Friends = ({prop}) => {
             {prop.map(item => {
                 return(
                     <div key={item.id} className="d-flex gap-3 align-items-center mb-2">
-                        <img src={item.img} alt={item.id} className="round-sm" width="72px" height="72px"/>
+                        <img src={item.src} alt={item.id} className="round-sm" width="72px" height="72px"/>
                         <div>
                             <p className="fw-600 mb-0">{item.name}</p>
-                            <p className="text-secondary mb-1 fs-12">{item.friends}</p>
+                            <p className="text-secondary mb-1 fs-12">{item.alt}</p>
                         </div>
                     </div>
                 ) 

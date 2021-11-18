@@ -1,23 +1,13 @@
 import React from 'react';
 import { useGlobalContext } from '../contexts/context';
 import { BsPlusLg, BsXLg } from 'react-icons/bs';
-import Image  from './Image';
+import characterData from '../imageData/charactersData'
 import Friends from './FriendsList';
 
 const PlanetDetail = () => {
     const { isPlanetOpen, closePlanet } = useGlobalContext();
 
-    const charList = [
-        { id: 1, img: Image.character7, friends: "23 friends", name:"Darlene Robertson"},
-        { id: 2, img: Image.character1, friends: "23 friends", name:"Cameron Williamson"},
-        { id: 3, img: Image.character2, friends: "23 friends", name:"Leslie Alexander"},
-        { id: 4, img: Image.character8, friends: "23 friends", name:"Kristin Watson"},
-        { id: 5, img: Image.character5, friends: "23 friends", name:"Jenny Wilson"},
-        { id: 6, img: Image.character12, friends: "23 friends", name:"Marvin McKinney"},
-        { id: 7, img: Image.character6, friends: "23 friends", name:"Jerome Bell"},
-        { id: 8, img: Image.character4, friends: "23 friends", name:"Guy Hawkins"},
-        { id: 9, img: Image.character10, friends: "23 friends", name:"Robert Fox"},
-    ]
+    
 
     return (
         <div>
@@ -39,7 +29,7 @@ const PlanetDetail = () => {
                         <BsPlusLg/>
                     </div>
                 </div>
-                <Friends prop={charList}/>
+                <Friends prop={characterData}/>
             </div>
         </div>
     )

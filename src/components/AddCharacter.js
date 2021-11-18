@@ -49,7 +49,7 @@ const AddCharacter = (props) => {
                 <label htmlFor="name" className="fw-600 pb-1 mt-3">Friends</label>
                 <div className="form-control d-flex justify-content-between border-0 form-bg mb-3" type="text" >
                     <div className="d-flex add-friend rounded align-items-center gap-2">
-                        <img className="round-sm rounded" src={ require('../images/characters/character-2.png').default} width="28px" height="28px" alt="profile pic" />
+                        <img className="round-sm rounded" src={ require('../images/characters/character-2.png')} width="28px" height="28px" alt="profile pic" />
                         <p className="mb-0">Jane Cooper</p>
                         <p className="mb-0 text-secondary ms-2 cursor">{<BsXLg/>}</p>
                     </div>
